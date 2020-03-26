@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+
+  
+        <table>
+            <!-- This is the head section -->
+            <tr>
+                <tr>
+                    <td class="heading" class="row">
+                        SImple Calculator JS JS
+                    </td>
+                </tr>
+
+                <td class="row">
+                    <input type="text" id="input" placeholder="0" readonly="readonly">
+                    <input type="text" id="answer"  readonly="readonly" style="color: green;">
+                </td>
+            </tr>
+            <!-- buttons section -->
+
+            <tr>
+
+                <td class="row" style="padding-bottom: 20px">
+                    <input type="button" class="btn btn-outline-danger" value=" CE " onclick="clearScreen()">
+                    <input type="button" class="btn btn-outline-success" value=" &#247; " onclick="getOperand('/')">
+                    <input type="button" class="btn btn-outline-success" value=" x " onclick="getOperand('x')">
+                    <input type="button" class="btn btn-outline-danger" value=" &#8592; " onclick="backspace()" style="color: red;">
+                    <br>
+                    <input type="button" class="btn btn-outline-primary" value="1" onclick="getNumber(1)">
+                    <input type="button" class="btn btn-outline-primary" value="2" onclick="getNumber(2)">
+                    <input type="button" class="btn btn-outline-primary" value="3" onclick="getNumber(3)">
+                    <input type="button" class="btn btn-outline-success" value=" + " onclick="getOperand('+')">
+                    <br>
+                    <input type="button" class="btn btn-outline-primary" value="4" onclick="getNumber(4)">
+                    <input type="button" class="btn btn-outline-primary" value="5" onclick="getNumber(5)">
+                    <input type="button" class="btn btn-outline-primary" value="6" onclick="getNumber(6)">
+                    <input type="button" class="btn btn-outline-success" value=" - " onclick="getOperand('-')">
+                    <br>
+                    <input type="button" class="btn btn-outline-primary" value="7" onclick="getNumber(7)">
+                    <input type="button" class="btn btn-outline-primary" value="8" onclick="getNumber(8)">
+                    <input type="button" class="btn btn-outline-primary" value="9" onclick="getNumber(9)">
+                    <input type="button" class="btn btn-outline-success" value=" ( ) " onclick="brackets()">
+                    <br>
+                    <br>
+                    <input type="button" class="btn btn-outline-success" value=" +/- " onclick="getOperand('+/-')">
+                    <input type="button" class="btn btn-outline-primary" value=" 0 " onclick="getNumber(0)">
+                    <input type="button" class="btn btn-outline-success" value=" = " onclick="compute()" style="width: 125px;">
+                    <br>
+                </td>
+
+            </tr>
+
+
+
+        </table>
+
+    
+    
+</body>
+</html>
